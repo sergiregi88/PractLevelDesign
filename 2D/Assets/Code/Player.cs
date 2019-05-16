@@ -93,7 +93,7 @@ public class Player : MonoBehaviour ,ITakeDamage
     {
 
         AudioSource.PlayClipAtPoint(PlayerHitSound, transform.position);
-        FloatingText.Show(string.Format("-{0}", damage), "PlayerTakeDamage", new FromWorldPointTextPositioner(Camera.main, transform.position, 2f, 60f));
+   //     FloatingText.Show(string.Format("-{0}", damage), "PlayerTakeDamage", new FromWorldPointTextPositioner(Camera.main, transform.position, 2f, 60f));
        if(OuchEffect!=null)
         Instantiate(OuchEffect, transform.position, transform.rotation);
         Health -= damage;
@@ -145,15 +145,15 @@ public class Player : MonoBehaviour ,ITakeDamage
             return;
         if (FireProjectileEffect != null)
         {
-           var effect=(GameObject) Instantiate(FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-            effect.transform.parent = transform;
+        //   var effect=(GameObject) Instantiate(FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+          //  effect.transform.parent = transform;
         }
         var direction = _isFacingRight? Vector2.right:-Vector2.right;
-        var projecile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-        projecile.Initialize(gameObject, direction, _controller.Velocity);
+        //var projecile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+        //projecile.Initialize(gameObject, direction, _controller.Velocity);
        
         _canFireIn = FireRate;
-        AudioSource.PlayClipAtPoint(PlayerShootSound, transform.position);
+      //  AudioSource.PlayClipAtPoint(PlayerShootSound, transform.position);
       //  Animator.SetTrigger("Fire");
     }
     //-------------
