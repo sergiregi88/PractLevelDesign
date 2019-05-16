@@ -26,6 +26,9 @@ TextureImporter:
     21300042: Upper Cave Piece
     21300044: Jump Pad
     21300046: Microphone
+    21300048: Spawner
+    21300050: ITEM
+    21300052: Gun
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -541,17 +544,77 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1698
-        y: 55
+        y: 122
         width: 61
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41908264}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
       spriteID: af44534e991e9bc458fc9395b0ba1b7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawner
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 285
+        width: 228
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ca0bf4d60bd624db53353f1cd9d601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ITEM
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1484
+        width: 129
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab71f6e83092ec428a75f19b039a12a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gun
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 936
+        width: 258
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12afc8dca57916b4a8db1b81a2eb3bab
       vertices: []
       indices: 
       edges: []

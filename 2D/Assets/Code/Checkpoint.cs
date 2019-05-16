@@ -17,7 +17,7 @@ public class Checkpoint :MonoBehaviour
     {
         FloatingText.Show("CheckPoint", "CheckpointText", new CenteredTextPosition(.5f));
         yield return new WaitForSeconds(.5f);
-        FloatingText.Show(string.Format("+{0} time bonus",bonus), "CheckpointText",new CenteredTextPosition(.5f));
+       // FloatingText.Show(string.Format("+{0} time bonus",bonus), "CheckpointText",new CenteredTextPosition(.5f));
     }
     public void PlayerLeftCheckPoint()
     {

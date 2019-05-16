@@ -149,9 +149,9 @@ public class Player : MonoBehaviour ,ITakeDamage
           //  effect.transform.parent = transform;
         }
         var direction = _isFacingRight? Vector2.right:-Vector2.right;
-        //var projecile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-        //projecile.Initialize(gameObject, direction, _controller.Velocity);
-       
+        var projecile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+        projecile.Initialize(gameObject, direction, _controller.Velocity);
+
         _canFireIn = FireRate;
       //  AudioSource.PlayClipAtPoint(PlayerShootSound, transform.position);
       //  Animator.SetTrigger("Fire");
